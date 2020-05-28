@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test_internet": "jest ./test/the_internet_bbox_test"
   },
   "repository": {
     "type": "git",
