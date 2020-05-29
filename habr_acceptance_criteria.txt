@@ -1,0 +1,11 @@
+Habr site acceptance criteria:
+
+Registration with different methods
+Login for registered users
+Changing language between russian and english
+Changing stream themes
+Ability to search for articles
+Reading articles pages
+Reading comments
+Comments for registered users
+Adding articles to bookmarks

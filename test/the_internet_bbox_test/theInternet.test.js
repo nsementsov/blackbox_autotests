@@ -1,5 +1,11 @@
 jest.setTimeout(10000);
 
+/**
+ * "The Internet" black-box tests
+ * 
+ * @group internet
+ */
+
 describe('"The Internet" black-box tests', () => {
 
     describe('add/delete elements page', () => {

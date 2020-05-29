@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test_internet": "jest ./test/the_internet_bbox_test"
+    "test": "jest -i",
+    "test_internet": "jest ./test/the_internet_bbox_test",
+    "test_habr_suits": "jest ./test/habr_test/typical_test_suits -i",
+    "test_habr_snap": "jest ./test/habr_test/snapshot_tests",
+    "test_habr_e2e": "jest ./test/habr_test/e2e_tests -i"
   },
   "repository": {
     "type": "git",
@@ -13,8 +16,7 @@
   },
   "keywords": [
     "intern",
-    "AQA",
-    "task"
+    "AQA"
   ],
   "author": "M. Sementsov",
   "license": "ISC",
@@ -24,7 +26,9 @@
   "homepage": "https://github.com/nsementsov/blackbox_autotests#readme",
   "devDependencies": {
     "jest": "^26.0.1",
+    "jest-image-snapshot": "^4.0.2",
     "jest-puppeteer": "^4.4.0",
+    "jest-runner-groups": "^2.0.1",
     "puppeteer": "^3.1.0"
   }
 }
