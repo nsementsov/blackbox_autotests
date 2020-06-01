@@ -1,4 +1,4 @@
-// const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer');
 jest.setTimeout(30000);
 
 /**
@@ -8,17 +8,17 @@ jest.setTimeout(30000);
  */
 
 describe('find ru article', () => {
-    // let browser, page;
-    // beforeAll(async () => {
-    //     browser = await puppeteer.launch({
-    //         headless: false,
-    //         slowMo: 80
-    //     });
-    //     page = await browser.newPage();
-    // });
-    // afterAll(async () => {
-    //     await browser.close();
-    // });
+    let browser, page;
+    beforeAll(async () => {
+        browser = await puppeteer.launch({
+            // headless: false,
+            // slowMo: 80
+        });
+        page = await browser.newPage();
+    });
+    afterAll(async () => {
+        await browser.close();
+    });
     test('find puppeteer article', async () => {
         await page.goto('https://habr.com/ru');
 
